@@ -1,13 +1,30 @@
+import React from "react";
+import Gallery from "./Components/Gallery";
+import Contents from "./Components/Contents";
+import Features from "./Components/Features";
+import Header from "./Components/Header";
+import Partners from "./Components/Partners";
+import Testimonials from "./Components/Testimonials";
+import OpenType from "./Components/OpenType";
+import Fotter from "./Components/Fotter";
+import Intro from "./Components/Intro";
 
-
-function App() {
+export default function App() {
   return (
-    <div className="App">
-        <header>
-          
-        </header>
+    <div className=" overflow-auto">
+      <nav className="block overflow-auto bg-black fixed h-full w-full z-20 top-0 md-block:pl-52 md-block:pr-52 left-0 border-b border-gray-200 ">
+        <Header />
+        <Intro />
+        <div style={{backgroundColor:'#181818'}}>
+        <Features />
+        <Contents />
+        <Gallery />
+        <Partners />
+        <Testimonials />
+        <OpenType />
+        <Fotter />
+        </div>
+      </nav>
     </div>
   );
 }
-
-export default App;

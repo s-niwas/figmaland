@@ -4,7 +4,7 @@ export default function Fotter() {
   return (
     <div>
       <footer className="md:p-20 pl-20 pt-20 pb-20">
-        <div className="bg-black mx-auto w-full max-w-screen-xl">
+        <div className=" mx-auto w-full max-w-screen-xl">
           <div className="grid grid-cols-1 gap-1 px-1 py-6 lg:py-8 md:grid-cols-4">
             <div className="md:pb-0 pb-10">
               <h2 className="mb-6 text-xl font-medium text-white font-graphik  ">

@@ -2,16 +2,17 @@ import React from "react";
 
 export default function Gallery() {
   return (
-    <>
-      <div className="bg-black flex items-center justify-center">
+    <div style={{backgroundColor:'#181818'}}>
+      <div className="flex items-center justify-center" style={{backgroundColor:'#181818'}}>
         <div className="block text-center mt-20 md:mt-0 md:w-4/5 xl:pl-4 xl:pr-4">
-        <h1 className="block mb-4 pl-16 pr-16 md:pl-20 font-graphik text-5xl font-normal leading-16 tracking-tight  md:pr-20 lg:pl-60 lg:pr-60 xl:pl-80 xl:pr-80  leading-none  text-white md:text-5xl lg:text-6xl ">
+        <h1 className="block mb-4  font-graphik text-5xl font-normal leading-16 tracking-tight  leading-none  text-white md:text-5xl lg:text-6xl ">
             Gallery
           </h1>
-          <p className="text-white font-graphik  pl-14 pr-14 sm:pl-60 sm:pr-60 xl:pl-80 xl:pr-80 font-normal text-base leading-7 tracking-wide sm:tracking-wider">
-            We focus on ergonomics and meeting you where you work. It's only a
-            keystroke away.
+          <div className="flex justify-center">
+          <p className="text-white lg:w-96 w-72 font-graphik font-normal text-base leading-7 tracking-wide sm:tracking-wider">
+            We focus on ergonomics and meeting you where you work. It's only a keystroke away.
           </p>
+          </div>
         </div>
       </div>
 
@@ -140,6 +141,6 @@ export default function Gallery() {
           See more
         </a>
       </div>
-    </>
+    </div>
   );
 }

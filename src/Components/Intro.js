@@ -3,7 +3,7 @@ import Screen1 from "../photos/screen1.png";
 
 export default function Intro() {
   return (
-    <div>
+    <div className=" pb-10 md:pb-0 ">
       <div className="bg-black flex items-center justify-center gap-y-16">
         <div className="block text-center md:w-4/5 xl:pl-4 xl:pr-4 pt-10 pb-10 md:pt-20 md:pb-20">
           <h1 className="block mb-4 pl-16 pr-16 md:pl-20 font-graphik text-5xl font-normal leading-16 tracking-tight  md:pr-20 lg:pl-60 lg:pr-60 xl:pl-80 xl:pr-80  leading-none  text-white md:text-5xl lg:text-6xl ">

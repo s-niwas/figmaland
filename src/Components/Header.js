@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import FigmaLogo from "../photos/FigmaLogo";
 import { useNavigate } from "react-router-dom";
 
 export default function Header(){
@@ -17,10 +16,14 @@ export default function Header(){
         <>
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto  p-4">
           <a href="#" className="flex flex-wrap items-center justify-center">
-            <FigmaLogo />
+          <img
+              src={require("../photos/figmalogo.png")}
+              alt="Logo"
+              className="md:w-fit w-36 bg-black"
+            ></img>
           </a>
           <div className="flex md:order-2 space-x-2 md:space-x-0">
-          <button onClick={handleLogin} className=" w-28  pl-5 pr-5 bg-transparent border-2 border-white text-white font-graphik  text-lg transition-colors duration-700 transform  hover:border-4">
+          <button onClick={handleLogin} className=" md:w-28 px-7 text-sm md:px-7 bg-transparent border-2 border-white text-white font-graphik  md:text-lg transition-colors duration-700 transform  hover:border-x-4">
             Login
           </button>
      
@@ -50,26 +53,26 @@ export default function Header(){
             {menu && (
           <div className="absolute right-0 mt-2 w-48 bg-black rounded-lg shadow-md py-2 z-10">
             <a
-              href="/welcome"
+              href="/"
               className="block px-4 py-2 text-white font-graphik "
               aria-current="page"
             >
               Home
             </a>
             <a
-              href="/welcome"
+              href="/"
               className="block px-4 py-2 text-white font-graphik "
             >
               Product
             </a>
             <a
-              href="/welcome"
+              href="/"
               className="block px-4 py-2 text-white font-graphik "
             >
               About
             </a>
             <a
-              href="/welcome"
+              href="/"
               className="block px-4 py-2 text-white font-graphik "
             >
               Contact

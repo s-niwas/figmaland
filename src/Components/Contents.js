@@ -2,16 +2,18 @@ import React from "react";
 
 export default function Contents() {
   return (
-    <div className="p-14 pt-28 m-2 md:p-20 md:pt-0 md:m-0">
-      <div className="bg-black flex items-center justify-center">
-        <div className="block text-center md:w-4/5 xl:pl-4 xl:pr-4 ">
-        <h1 className="block mb-4 pl-16 pr-16 md:pl-20 font-graphik text-5xl font-normal leading-16 tracking-tight  md:pr-20 lg:pl-60 lg:pr-60 xl:pl-80 xl:pr-80  leading-none  text-white md:text-5xl lg:text-6xl ">
+    <div style={{backgroundColor:'#181818'}}>
+    <div className=" pt-28 m-2 md:p-20 md:pt-0 md:m-0" >
+      <div className=" flex items-center justify-center" >
+        <div className="block text-center md:w-4/5  " >
+        <h1 className="block mb-4 font-graphik text-5xl font-normal leading-16 tracking-tight leading-none  text-white md:text-5xl lg:text-6xl ">
              Contents
           </h1>
-          <p className="text-white  pl-10 pr-10 gap-10 font-graphik  sm:pl-60 sm:pr-60 xl:pl-80 xl:pr-80 font-normal text-base leading-7 tracking-tight sm:tracking-wider">
-            We focus on ergonomics and meeting you where you work. It's only a
-            keystroke away.
+          <div className="flex justify-center">
+          <p className="text-white lg:w-96 w-72 font-graphik font-normal text-base leading-7 tracking-wide sm:tracking-wider">
+            We focus on ergonomics and meeting you where you work. It's only a keystroke away.
           </p>
+          </div>
         </div>
       </div>
 
@@ -19,7 +21,7 @@ export default function Contents() {
         <div className="flex flex-col lg:flex-row justify-center lg:space-x-10 p-10 space-y-5 lg:space-y-0">
           <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
             <div className="p-5">
-              <h5 className="mb-2 mt-4 text-center text-2xl font-medium tracking-tight text-black ">
+              <h5 className="mb-2 text-center text-2xl font-medium tracking-tight text-black ">
                 Work
               </h5>
 
@@ -74,6 +76,7 @@ export default function Contents() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

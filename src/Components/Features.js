@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Features() {
   return (
-    <>
-      <div className="bg-black flex items-center justify-center w-screen pt-28 md:pt-0">
+    <div style={{backgroundColor:'#181818'}}>
+      <div className=" flex items-center justify-center w-screen pt-28 " >
         <div className="block text-center md:w-4/5 xl:pl-4 xl:pr-4">
-          <h1 className="block mb-4 pl-16 pr-16 md:pl-20 font-graphik text-5xl font-normal leading-16 tracking-tight  md:pr-20 lg:pl-60 lg:pr-60 xl:pl-80 xl:pr-80  leading-none  text-white md:text-5xl lg:text-6xl ">
+          <h1 className="block  pl-16 pr-16 md:pl-20 font-graphik text-5xl font-normal leading-16 tracking-tight  md:pr-20 lg:pl-60 lg:pr-60 xl:pl-80 xl:pr-80  leading-none  text-white md:text-5xl lg:text-6xl ">
             FEATURES
           </h1>
           <p className="text-white font-graphik  px-12 sm:pl-60 sm:pr-60 xl:pl-80 xl:pr-80 font-normal text-base leading-7 tracking-tight sm:tracking-wider">
@@ -14,23 +14,24 @@ export default function Features() {
           </p>
         </div>
       </div>
-      <div className="bg-black  flex grid-col-2 flex-col m-14  lg:pl-32 lg:pr-32 lg:flex-row justify-center">
-        <div className="block md:hidden justify-end">
+      <div className="  flex grid-col-2 flex-col m-14  lg:pl-32 lg:pr-32 lg:flex-row justify-center" style={{backgroundColor:'#181818'}}>
+        <div className="block md:hidden justify-end" style={{backgroundColor:'#181818'}}>
           <img
             src={require("../photos/features_mobile.png")}
             alt="Image2"
             className="w-fill lg:mt-2 h-auto"
           ></img>
         </div>
-        <div className="hidden md:block  justify-end">
+        <div className="hidden md:block  justify-end" style={{backgroundColor:'#181818'}}>
           <img
             src={require("../photos/screen2.png")}
             alt="Image2"
             className="w-fit lg:mt-2 h-auto"
           ></img>
         </div>
-        <div className="md:w-fill w-fit md:pl-0 pl-5 lg:ml-8 my-8 justify-center lg:mt-24 lg:mr-16 space-y-4">
-          <ul className="flex flex-col items-center space-y-16">
+        <div className="flex flex-col justify-center " style={{backgroundColor:'#181818'}}>
+        <div className="flex md:w-fill w-fit md:pl-0 pl-5 lg:ml-8 my-8  lg:mt-24 lg:mr-16 space-y-4" style={{backgroundColor:'#181818'}}>
+          <ul className=" space-y-16" style={{backgroundColor:'#181818'}}>
             <li className="  text-white font-graphik  items-center">
               <div className="flex flex-row">
                 <svg
@@ -102,7 +103,8 @@ export default function Features() {
             </li>
           </ul>
         </div>
+        </div>
       </div>
-    </>
+    </div>
   );
 }

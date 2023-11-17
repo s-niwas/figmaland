@@ -2,14 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import WelcomeScreen from "./Screens/WelcomeScreen";
 import LoginScreen from "./Screens/LoginScreen";
 import SignUpScreen from "./Screens/SignUpScreen";
+import App from "./App";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <WelcomeScreen />,
+    element: <App />,
   },
   {
     path: "/login",
